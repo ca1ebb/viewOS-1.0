@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VR Website</title>
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .vr-container {
+      display: flex;
+      height: 100vh;
+    }
+
+    .left-box, .right-box {
+      flex: 1;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* Change the background color here */
+      background-color: #f0f0f0;
+    }
+
+    .left-box {
+      transform: perspective(1000px) rotateY(0deg); /* Changed rotation to 0 degrees */
+      transform-origin: center;
+      /* Change the background color here */
+  background: url(https://images7.alphacoders.com/133/1337829.png)
+    }
+
+    .right-box {
+      transform: perspective(1000px) rotateY(0deg); /* Changed rotation to 0 degrees */
+      transform-origin: center;
+      /* Change the background color here */
+      background: url(https://images7.alphacoders.com/133/1337829.png)
+    }
+
+    .line {
+      width: 2px;
+      height: 100%;
+      background-color: black;
+    }
+  .applicationsm {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 200px; /* Adjust width as needed */
+      height: 200px; /* Adjust height as needed */
+      background-color: rgba(255, 0, 0, 0.5); /* Adjust background color and opacity */
+    }
+  </style>
+</head>
+<body>
+  <div class="vr-container">
+    <div class="left-box">
+      <!-- Content for the left box -->
+        <div class="applicationsm">
+      <!-- Content for the overlay box -->
+      <h2>Overlay Box</h2>
+    </div>
+    </div>
+    <div class="line"></div>
+    <div class="right-box">
+     <div class="applicationsm">
+      <!-- Content for the overlay box -->
+      <h2>Overlay Box</h2>
+    </div>
+    </div>
+  </div>
+</body>
+</html>
